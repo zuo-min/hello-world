@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div>
+    <button id="btn">哪吒</button>
+  </div>
+  <img src="" alt="">
+
+
+  <script>
+
+    var imgs = ['./images/01.jpg', './images/1.jpg', './images/02.jpg', './images/2.jpg'];
+    var count = 0;
+    var target = document.getElementsByTagName('img')[0];
+    var setImg = function () {
+      target.src = imgs[count];
+      count++;
+      if(count === imgs.length) {
+        count=0;
+      }
+      else {
+        count;
+      }
+    };
+    setImg();
+    document.getElementById('btn').onclick = function () {
+      setImg();
+    }
+
+  </script>
+</body>
+
+</html>
