@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button>按钮</button>
+  <input type="text">
+  <script>
+  var  btn = document.getElementsByTagName('button')[0];
+  btn.onclick = function () {
+    console.log("点击了按钮");
+    
+  }
+  var ipt = document.getElementsByTagName("input")[0];
+  ipt.onfocus = function () { 
+    console.log("获取了光标");
+    
+   }
+
+   ipt.onblur = function() {
+     console.log("失去了光标");
+     
+   }
+  </script>
+</body>
+</html>
